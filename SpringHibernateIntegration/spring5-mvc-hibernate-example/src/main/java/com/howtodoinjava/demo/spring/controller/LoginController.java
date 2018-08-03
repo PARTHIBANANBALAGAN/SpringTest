@@ -20,6 +20,7 @@ public class LoginController {
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public ModelAndView LoginPage()
 	{
+		System.out.println("testing");
 		return new ModelAndView("Login","login",new UserRegisterForm());
 	}
 	
